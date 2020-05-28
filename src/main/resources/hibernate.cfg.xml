@@ -2,20 +2,17 @@
 <!DOCTYPE hibernate-configuration PUBLIC
 "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!-- 此文件仅用于hibernate逆向工程 -->
 <hibernate-configuration>
-    <session-factory>
-        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.password">123!@#</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
-        <property name="hibernate.format_sql">true</property>
-        <property name="hibernate.hbm2ddl.auto">validate</property>
-        <property name="hibernate.show_sql">true</property>
-        <mapping resource="org/ssh/demo/pojo/Items.hbm.xml" />
-        <mapping resource="org/ssh/demo/pojo/User.hbm.xml" />
-        <mapping resource="org/ssh/demo/pojo/Fund.hbm.xml" />
-        <mapping resource="org/ssh/demo/pojo/OrderInfo.hbm.xml" />
-    </session-factory>
+	<session-factory>
+		<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">123!@#</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">validate</property>
+		<property name="hibernate.show_sql">true</property>
+	</session-factory>
 </hibernate-configuration>

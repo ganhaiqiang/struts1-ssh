@@ -129,22 +129,23 @@
 					<components>
 						<component>
 							<name>hbm2java</name>
-							<outputDirectory>src/main/java/</outputDirectory>
+							<outputDirectory>src/main/java</outputDirectory>
 							<implementation>jdbcconfiguration</implementation>
 						</component>
 						<component>
 							<name>hbm2hbmxml</name>
-							<outputDirectory>src/main/resources/hbm</outputDirectory>
+							<outputDirectory>src/main/java</outputDirectory>
 						</component>
 						<component>
 							<name>hbm2cfgxml</name>
-							<outputDirectory>src/main/resources/hbm</outputDirectory>
+							<outputDirectory>src/main/resources</outputDirectory>
 							<implementation>jdbcconfiguration</implementation>
 						</component>
 					</components>
 					<componentProperties>
 						<drop>true</drop>
-						<revengfile>src/main/resources/hibernate.reveng.xml</revengfile>
+						<!-- 单独逆向某个表时采用 -->
+						<!-- <revengfile>src/main/resources/hibernate.reveng.xml</revengfile> -->
 						<configurationfile>/src/main/resources/hibernate.cfg.xml</configurationfile>
 						<packagename>org.ssh.demo.pojo</packagename>
 						<ejb3>false</ejb3>

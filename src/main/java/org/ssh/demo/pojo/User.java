@@ -1,5 +1,5 @@
 package org.ssh.demo.pojo;
-// Generated 2020-5-28 9:14:53 by Hibernate Tools 3.2.2.GA
+// Generated 2020-5-28 17:26:24 by Hibernate Tools 3.2.2.GA
 
 
 
